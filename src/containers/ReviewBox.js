@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import data from '../data/reviews.json'
+import WordTable from '../components/WordTable.js'
 
 class ReviewBox extends Component{
   constructor(props){
@@ -23,7 +24,11 @@ class ReviewBox extends Component{
 
   render(){
     return(
-      <p>This is ReviewBox</p>)
+      <div>
+        <p>This is ReviewBox</p>
+        <WordTable className="WordTable"/>
+      </div>
+  )
   }
 }
 
