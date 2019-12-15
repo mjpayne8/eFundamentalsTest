@@ -4,7 +4,9 @@ import ReviewBox from './containers/ReviewBox.js'
 
 function App() {
   return (
-    <ReviewBox className='ReviewBox'/>
+    <div>
+      <ReviewBox className='ReviewBox'/>
+    </div>
   );
 }
 
