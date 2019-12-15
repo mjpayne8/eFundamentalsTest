@@ -13,21 +13,19 @@ class ReviewBox extends Component{
   componentDidMount(){
     const newData = {}
     for (const review of data.reviews){
-      const splitReviews = review.split(' ');
+      const splitReviews = review.split(/\W+/);
       for(const word of splitReviews){
         const lowCase = word.toLowerCase();
         newData[lowCase] ? newData[lowCase] += 1 : newData[lowCase] = 1;
       }
     }
+    delete newData['']
     this.setState({formattedData: newData})
   }
 
   render(){
     return(
-      <div>
-        <p>This is ReviewBox</p>
-        <WordTable className="WordTable"/>
-      </div>
+        <WordTable className="WordTable" wordObject={this.state.formattedData}/>
   )
   }
 }
