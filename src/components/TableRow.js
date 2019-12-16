@@ -4,7 +4,7 @@ const TableRow = (props) => {
 
   return(
     <tr>
-      <td><font size= {props.count}>{props.word}</font></td>
+      <td>{props.word}</td>
       <td>{props.count}</td>
     </tr>
   )
