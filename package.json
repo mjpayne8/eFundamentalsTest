@@ -40,7 +40,7 @@
   "devDependencies": {
     "@babel/register": "^7.7.4",
     "chai": "^4.2.0",
-    "jsdom": "^15.2.1",
+    "jsdom": "^16.5.0",
     "mocha": "^6.2.2"
   }
 }
